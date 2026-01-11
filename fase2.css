@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Cormorant Garamond', serif;
+  overflow: hidden;
+}
+
+.fase2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Coloca um elemento abaixo do outro */
+  justify-content: center; /* Centraliza verticalmente o conjunto */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 40px; /* Espaço entre os blocos de texto e a borboleta */
+  background-image: url('nancy.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.15), transparent 60%);
+}
+
+.content {
+  max-width: 85%;
+  text-align: center;
+  z-index: 2;
+}
+
+.image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 30px rgba(173, 216, 230, 0.4);
+}
+
+.phrase {
+  color: #fdfdfe;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+
+button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  color: #fdfdfe;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+ @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  
+    .balao {
+      width: 80px;
+      height: 110px;
+      font-size: 0.8em;
+    }
+  }
+  
